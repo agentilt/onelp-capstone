@@ -1,0 +1,207 @@
+{
+  "calibration": {
+    "n_fields": 462,
+    "ece": 0.05600216450216446,
+    "mean_confidence": 0.9201493506493508,
+    "mean_accuracy": 0.9653679653679653,
+    "overconfidence": -0.04521861471861455,
+    "bins": [
+      {
+        "lo": 0.0,
+        "hi": 0.1,
+        "count": 0,
+        "acc": null,
+        "conf": null
+      },
+      {
+        "lo": 0.1,
+        "hi": 0.2,
+        "count": 0,
+        "acc": null,
+        "conf": null
+      },
+      {
+        "lo": 0.2,
+        "hi": 0.30000000000000004,
+        "count": 0,
+        "acc": null,
+        "conf": null
+      },
+      {
+        "lo": 0.30000000000000004,
+        "hi": 0.4,
+        "count": 0,
+        "acc": null,
+        "conf": null
+      },
+      {
+        "lo": 0.4,
+        "hi": 0.5,
+        "count": 0,
+        "acc": null,
+        "conf": null
+      },
+      {
+        "lo": 0.5,
+        "hi": 0.6000000000000001,
+        "count": 0,
+        "acc": null,
+        "conf": null
+      },
+      {
+        "lo": 0.6000000000000001,
+        "hi": 0.7000000000000001,
+        "count": 1,
+        "acc": 0.0,
+        "conf": 0.662
+      },
+      {
+        "lo": 0.7000000000000001,
+        "hi": 0.8,
+        "count": 9,
+        "acc": 0.5555555555555556,
+        "conf": 0.7587777777777779
+      },
+      {
+        "lo": 0.8,
+        "hi": 0.9,
+        "count": 148,
+        "acc": 0.9527027027027027,
+        "conf": 0.866581081081081
+      },
+      {
+        "lo": 0.9,
+        "hi": 1.0,
+        "count": 304,
+        "acc": 0.9868421052631579,
+        "conf": 0.9518552631578948
+      }
+    ],
+    "by_category": {
+      "date": {
+        "mean_conf": 0.9137692307692306,
+        "mean_acc": 1.0,
+        "overconfidence": -0.08623076923076944,
+        "n": 39
+      },
+      "enum": {
+        "mean_conf": 0.9395384615384615,
+        "mean_acc": 0.9230769230769231,
+        "overconfidence": 0.016461538461538416,
+        "n": 13
+      },
+      "money": {
+        "mean_conf": 0.9229487179487179,
+        "mean_acc": 0.9807692307692307,
+        "overconfidence": -0.057820512820512815,
+        "n": 156
+      },
+      "narr": {
+        "mean_conf": 0.9144444444444445,
+        "mean_acc": 0.9444444444444444,
+        "overconfidence": -0.029999999999999916,
+        "n": 108
+      },
+      "num": {
+        "mean_conf": 0.9221272727272727,
+        "mean_acc": 0.9454545454545454,
+        "overconfidence": -0.023327272727272752,
+        "n": 110
+      },
+      "table": {
+        "mean_conf": 0.9189999999999999,
+        "mean_acc": 1.0,
+        "overconfidence": -0.08100000000000007,
+        "n": 36
+      }
+    }
+  },
+  "latency": {
+    "p50": 23.85,
+    "p95": 29.433999999999994,
+    "mean": 23.103518518518516,
+    "max": 31.85,
+    "stage_mean": {
+      "detect": 2.1735185185185184,
+      "extract_parallel": 18.86425925925926,
+      "merge": 1.2829629629629626,
+      "validate": 0.7827777777777777
+    },
+    "target_p50": 30.0,
+    "target_p95": 90.0,
+    "p50_pass": true,
+    "p95_pass": true
+  },
+  "threshold_operating": [
+    {
+      "threshold": 0.5,
+      "auto_apply_rate": 1.0,
+      "error_leakage": 0.03463203463203463,
+      "review_rate": 0.0
+    },
+    {
+      "threshold": 0.55,
+      "auto_apply_rate": 1.0,
+      "error_leakage": 0.03463203463203463,
+      "review_rate": 0.0
+    },
+    {
+      "threshold": 0.6,
+      "auto_apply_rate": 1.0,
+      "error_leakage": 0.03463203463203463,
+      "review_rate": 0.0
+    },
+    {
+      "threshold": 0.65,
+      "auto_apply_rate": 1.0,
+      "error_leakage": 0.03463203463203463,
+      "review_rate": 0.0
+    },
+    {
+      "threshold": 0.7,
+      "auto_apply_rate": 0.9978354978354979,
+      "error_leakage": 0.03253796095444685,
+      "review_rate": 0.0021645021645021467
+    },
+    {
+      "threshold": 0.75,
+      "auto_apply_rate": 0.9891774891774892,
+      "error_leakage": 0.0262582056892779,
+      "review_rate": 0.010822510822510845
+    },
+    {
+      "threshold": 0.8,
+      "auto_apply_rate": 0.9783549783549783,
+      "error_leakage": 0.024336283185840708,
+      "review_rate": 0.02164502164502169
+    },
+    {
+      "threshold": 0.85,
+      "auto_apply_rate": 0.8961038961038961,
+      "error_leakage": 0.01932367149758454,
+      "review_rate": 0.10389610389610393
+    },
+    {
+      "threshold": 0.9,
+      "auto_apply_rate": 0.6666666666666666,
+      "error_leakage": 0.012987012987012988,
+      "review_rate": 0.33333333333333337
+    },
+    {
+      "threshold": 0.95,
+      "auto_apply_rate": 0.33116883116883117,
+      "error_leakage": 0.026143790849673203,
+      "review_rate": 0.6688311688311688
+    }
+  ],
+  "auto_apply_thresholds": {
+    "CAPITAL_CALL": 0.85,
+    "DISTRIBUTION": 0.85,
+    "QUARTERLY_REPORT": 0.8,
+    "ANNUAL_REPORT": 0.8,
+    "FINANCIAL_STATEMENT": 0.85,
+    "INVESTOR_UPDATE": 0.75,
+    "TERM_SHEET": 0.8,
+    "CAPITAL_ACCOUNT_STATEMENT": 0.8
+  }
+}

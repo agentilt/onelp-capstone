@@ -1,0 +1,259 @@
+{
+  "portfolio": {
+    "n_funds": 16,
+    "total_commitment": 143000000,
+    "total_nav": 104170000,
+    "total_unfunded": 38850000,
+    "asset_classes": [
+      "Growth Equity",
+      "Infrastructure",
+      "Private Credit",
+      "Private Equity",
+      "Real Estate",
+      "Venture Capital"
+    ]
+  },
+  "config": {
+    "simulations": 1000,
+    "horizon_quarters": 8,
+    "history_quarters": 16,
+    "backtest_holdout": 4,
+    "seed": 42,
+    "correlation_requested": true,
+    "correlation_engaged_full_portfolio": false
+  },
+  "forecast": {
+    "labels": [
+      "2026-Q1",
+      "2026-Q2",
+      "2026-Q3",
+      "2026-Q4",
+      "2027-Q1",
+      "2027-Q2",
+      "2027-Q3",
+      "2027-Q4"
+    ],
+    "p10": [
+      2336773.1875523767,
+      2304705.3092908715,
+      2327442.4632571656,
+      2308808.9978933306,
+      2312019.837860619,
+      2345863.0861908025,
+      2357444.471681603,
+      2392539.4185814834
+    ],
+    "p50": [
+      2765051.1131953383,
+      2753660.1861385456,
+      2775933.832608074,
+      2766823.2502854355,
+      2768576.0644188584,
+      2820616.7112914305,
+      2810764.738931094,
+      2809058.835069949
+    ],
+    "p90": [
+      3222706.0423873104,
+      3168188.6357045625,
+      3207000.5173910707,
+      3219204.204988256,
+      3232333.654438777,
+      3268977.678085602,
+      3272037.199929206,
+      3236913.81529684
+    ],
+    "cum_p50": [
+      2765051.1131953383,
+      5517663.333895883,
+      8276638.471168248,
+      11059138.649465762,
+      13819670.480890904,
+      16644689.316065641,
+      19472168.011519328,
+      22257676.32348316
+    ],
+    "used_correlation": false
+  },
+  "reserve": {
+    "scenario": "Liquidity Crisis",
+    "reserve_90": 7820997.097132897,
+    "reserve_95": 8134001.089149483
+  },
+  "backtest": {
+    "labels": [
+      "2025-Q1",
+      "2025-Q2",
+      "2025-Q3",
+      "2025-Q4"
+    ],
+    "actual_net": [
+      2955034.4386955444,
+      3164023.291039878,
+      3305699.3076092284,
+      3667703.125958142
+    ],
+    "pred_p50": [
+      2545884.5734171974,
+      2564997.6376940086,
+      2607376.7473920747,
+      2641756.2735933745
+    ],
+    "p10": [
+      2145568.220761005,
+      2138269.661490255,
+      2178003.3064420577,
+      2204993.142704775
+    ],
+    "p90": [
+      2956402.3409759477,
+      2970907.174906671,
+      3031815.9465728966,
+      3028052.713463307
+    ],
+    "actual_calls": [
+      1601650.428499232,
+      1469037.496271125,
+      1380261.603683016,
+      1276164.6529892895
+    ],
+    "actual_dists": [
+      4556684.867194776,
+      4633060.787311004,
+      4685960.911292244,
+      4943867.778947432
+    ],
+    "mae": 302728.77812285983,
+    "mae_pct": 0.04973747076667042,
+    "coverage_80": 0.65,
+    "n_origins": 5,
+    "n_points": 20,
+    "train_quarters": 12
+  },
+  "stress": [
+    {
+      "id": "base",
+      "name": "Base Case",
+      "severity": "mild",
+      "category": "market",
+      "navShock": 0.0,
+      "callMultiplier": 1.0,
+      "distributionMultiplier": 1.0,
+      "cumulative_net_p50": 22257676.32348316,
+      "reserve_95": 0.0,
+      "total_calls_mean": 11334469.137331221,
+      "total_dist_mean": 33593803.54652655
+    },
+    {
+      "id": "mild_downturn",
+      "name": "Mild Downturn",
+      "severity": "mild",
+      "category": "market",
+      "navShock": -0.1,
+      "callMultiplier": 1.0,
+      "distributionMultiplier": 0.85,
+      "cumulative_net_p50": 15050110.494222488,
+      "reserve_95": 0.0,
+      "total_calls_mean": 11334469.137331221,
+      "total_dist_mean": 26388464.491149392
+    },
+    {
+      "id": "market_correction",
+      "name": "Market Correction",
+      "severity": "moderate",
+      "category": "market",
+      "navShock": -0.2,
+      "callMultiplier": 1.1,
+      "distributionMultiplier": 0.7,
+      "cumulative_net_p50": 7568554.407644222,
+      "reserve_95": 0.0,
+      "total_calls_mean": 12278252.263783129,
+      "total_dist_mean": 19851244.234581474
+    },
+    {
+      "id": "recession",
+      "name": "Recession",
+      "severity": "severe",
+      "category": "market",
+      "navShock": -0.3,
+      "callMultiplier": 1.25,
+      "distributionMultiplier": 0.5,
+      "cumulative_net_p50": -673415.4715201667,
+      "reserve_95": 2441609.5499660363,
+      "total_calls_mean": 13636821.495799877,
+      "total_dist_mean": 12965930.81979879
+    },
+    {
+      "id": "liquidity_crisis",
+      "name": "Liquidity Crisis",
+      "severity": "severe",
+      "category": "liquidity",
+      "navShock": -0.25,
+      "callMultiplier": 1.5,
+      "distributionMultiplier": 0.3,
+      "cumulative_net_p50": -6804594.760817178,
+      "reserve_95": 8134001.089149483,
+      "total_calls_mean": 15756272.073370352,
+      "total_dist_mean": 8962067.905590294
+    },
+    {
+      "id": "credit_crunch",
+      "name": "Credit Crunch",
+      "severity": "moderate",
+      "category": "credit",
+      "navShock": -0.15,
+      "callMultiplier": 1.2,
+      "distributionMultiplier": 0.6,
+      "cumulative_net_p50": 5222010.691758605,
+      "reserve_95": 270906.68145006715,
+      "total_calls_mean": 13191426.535077961,
+      "total_dist_mean": 18412147.283246156
+    },
+    {
+      "id": "rapid_recovery",
+      "name": "Rapid Recovery",
+      "severity": "mild",
+      "category": "market",
+      "navShock": 0.15,
+      "callMultiplier": 0.9,
+      "distributionMultiplier": 1.3,
+      "cumulative_net_p50": 37316299.54381035,
+      "reserve_95": 0.0,
+      "total_calls_mean": 10359247.617930198,
+      "total_dist_mean": 47677364.96596298
+    }
+  ],
+  "sensitivity": {
+    "base_cum_p50": 22257676.32348316,
+    "drivers": [
+      {
+        "driver": "NAV level",
+        "low": 13866554.481339414,
+        "high": 30649610.756554313,
+        "base": 22257676.32348316,
+        "swing": 16783056.2752149
+      },
+      {
+        "driver": "Distribution rate",
+        "low": 14989430.098283488,
+        "high": 28872589.784594283,
+        "base": 22257676.32348316,
+        "swing": 13883159.686310794
+      },
+      {
+        "driver": "Capital-call rate",
+        "low": 24757185.296161905,
+        "high": 19952889.622055616,
+        "base": 22257676.32348316,
+        "swing": -4804295.674106289
+      }
+    ]
+  },
+  "correlation_demo": {
+    "independent_cum_std": 845114.1597252947,
+    "correlated_cum_std": 1174844.3535104007,
+    "independent_used_correlation": false,
+    "correlated_used_correlation": true,
+    "tail_widening_pct": 0.39016053629048786
+  }
+}

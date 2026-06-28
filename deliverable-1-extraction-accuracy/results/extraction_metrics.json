@@ -1,0 +1,382 @@
+{
+  "summary": {
+    "docai": {
+      "macro_f1": 0.8890086045641602,
+      "critical_field_f1": 0.9626984126984127,
+      "micro_precision": 0.8463203463203464,
+      "micro_recall": 0.8463203463203464,
+      "micro_f1": 0.8463203463203464,
+      "n_docs": 54,
+      "n_fields": 45,
+      "latency_p50": 10.705,
+      "latency_p95": 14.676999999999996,
+      "latency_mean": 11.010925925925926
+    },
+    "llm": {
+      "macro_f1": 0.8921604938271606,
+      "critical_field_f1": 0.8873015873015874,
+      "micro_precision": 0.9025974025974026,
+      "micro_recall": 0.9025974025974026,
+      "micro_f1": 0.9025974025974026,
+      "n_docs": 54,
+      "n_fields": 45,
+      "latency_p50": 28.335,
+      "latency_p95": 41.294999999999995,
+      "latency_mean": 28.232037037037042
+    },
+    "hybrid": {
+      "macro_f1": 0.9683950617283951,
+      "critical_field_f1": 0.9682539682539683,
+      "micro_precision": 0.9653679653679653,
+      "micro_recall": 0.9653679653679653,
+      "micro_f1": 0.9653679653679653,
+      "n_docs": 54,
+      "n_fields": 45,
+      "latency_p50": 32.44,
+      "latency_p95": 45.922,
+      "latency_mean": 32.21314814814814
+    }
+  },
+  "classification": {
+    "labels": [
+      "ANNUAL_REPORT",
+      "CAPITAL_ACCOUNT_STATEMENT",
+      "CAPITAL_CALL",
+      "DISTRIBUTION",
+      "FINANCIAL_STATEMENT",
+      "INVESTOR_UPDATE",
+      "QUARTERLY_REPORT",
+      "TERM_SHEET"
+    ],
+    "confusion_matrix": [
+      [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        4
+      ]
+    ],
+    "accuracy": 0.8888888888888888,
+    "macro_f1": 0.8890331890331891,
+    "per_class": {
+      "ANNUAL_REPORT": {
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1": 0.8000000000000002,
+        "support": 5
+      },
+      "CAPITAL_ACCOUNT_STATEMENT": {
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "support": 6
+      },
+      "CAPITAL_CALL": {
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523,
+        "support": 10
+      },
+      "DISTRIBUTION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8
+      },
+      "FINANCIAL_STATEMENT": {
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1": 0.8000000000000002,
+        "support": 5
+      },
+      "INVESTOR_UPDATE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 5
+      },
+      "QUARTERLY_REPORT": {
+        "precision": 0.7272727272727273,
+        "recall": 0.8,
+        "f1": 0.761904761904762,
+        "support": 10
+      },
+      "TERM_SHEET": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.888888888888889,
+        "support": 5
+      }
+    }
+  },
+  "field_f1_hybrid": {
+    "dueDate": 1.0,
+    "fundName": 1.0,
+    "contributionAmount": 1.0,
+    "lpName": 0.9166666666666666,
+    "lpCommitment": 1.0,
+    "callDate": 1.0,
+    "callNumber": 1.0,
+    "unfundedCommitment": 0.9,
+    "totalAmount": 0.9444444444444444,
+    "managementFeeAmount": 1.0,
+    "wireBank": 0.9,
+    "dpi": 0.8666666666666667,
+    "netIrr": 0.9333333333333333,
+    "tvpi": 0.9333333333333333,
+    "reportPeriod": 0.85,
+    "rvpi": 0.9,
+    "moic": 1.0,
+    "capitalCalledInPeriod": 1.0,
+    "distributionsInPeriod": 1.0,
+    "navAmount": 1.0,
+    "capitalGain": 1.0,
+    "distributionDate": 1.0,
+    "navAfterDistribution": 1.0,
+    "distributionType": 1.0,
+    "returnOfCapital": 1.0,
+    "periodEnd": 1.0,
+    "nav": 1.0,
+    "beginningBalance": 1.0,
+    "endingBalance": 1.0,
+    "totalDistributions": 0.8333333333333334,
+    "totalCalled": 1.0,
+    "grossIrr": 1.0,
+    "netAssets": 1.0,
+    "totalAssets": 1.0,
+    "isAudited": 0.8000000000000002,
+    "totalLiabilities": 1.0,
+    "burnRate": 1.0,
+    "arr": 1.0,
+    "runwayMonths": 1.0,
+    "revenueGrowth": 1.0,
+    "carriedInterest": 1.0,
+    "preferredReturn": 1.0,
+    "investmentPeriodYears": 0.8000000000000002,
+    "managementFee": 1.0,
+    "fundSize": 1.0
+  },
+  "field_f1_docai": {
+    "dueDate": 1.0,
+    "fundName": 0.5740740740740741,
+    "contributionAmount": 1.0,
+    "lpName": 0.75,
+    "lpCommitment": 0.9,
+    "callDate": 1.0,
+    "callNumber": 0.9,
+    "unfundedCommitment": 0.8000000000000002,
+    "totalAmount": 0.8888888888888888,
+    "managementFeeAmount": 0.7,
+    "wireBank": 0.8000000000000002,
+    "dpi": 0.8666666666666667,
+    "netIrr": 0.8666666666666667,
+    "tvpi": 1.0,
+    "reportPeriod": 0.65,
+    "rvpi": 1.0,
+    "moic": 0.9,
+    "capitalCalledInPeriod": 0.8000000000000002,
+    "distributionsInPeriod": 1.0,
+    "navAmount": 0.85,
+    "capitalGain": 1.0,
+    "distributionDate": 1.0,
+    "navAfterDistribution": 1.0,
+    "distributionType": 0.75,
+    "returnOfCapital": 1.0,
+    "periodEnd": 0.9090909090909091,
+    "nav": 1.0,
+    "beginningBalance": 0.8333333333333334,
+    "endingBalance": 0.6666666666666666,
+    "totalDistributions": 1.0,
+    "totalCalled": 1.0,
+    "grossIrr": 1.0,
+    "netAssets": 1.0,
+    "totalAssets": 0.8000000000000002,
+    "isAudited": 0.6,
+    "totalLiabilities": 1.0,
+    "burnRate": 1.0,
+    "arr": 0.8000000000000002,
+    "runwayMonths": 1.0,
+    "revenueGrowth": 1.0,
+    "carriedInterest": 1.0,
+    "preferredReturn": 1.0,
+    "investmentPeriodYears": 0.8000000000000002,
+    "managementFee": 0.6,
+    "fundSize": 1.0
+  },
+  "field_f1_llm": {
+    "dueDate": 0.8000000000000002,
+    "fundName": 0.9444444444444444,
+    "contributionAmount": 1.0,
+    "lpName": 0.9166666666666666,
+    "lpCommitment": 0.9,
+    "callDate": 1.0,
+    "callNumber": 1.0,
+    "unfundedCommitment": 1.0,
+    "totalAmount": 0.9444444444444444,
+    "managementFeeAmount": 1.0,
+    "wireBank": 0.9,
+    "dpi": 0.8666666666666667,
+    "netIrr": 1.0,
+    "tvpi": 0.9333333333333333,
+    "reportPeriod": 0.9500000000000001,
+    "rvpi": 0.9,
+    "moic": 0.7,
+    "capitalCalledInPeriod": 0.8000000000000002,
+    "distributionsInPeriod": 0.8000000000000002,
+    "navAmount": 0.8000000000000002,
+    "capitalGain": 1.0,
+    "distributionDate": 1.0,
+    "navAfterDistribution": 1.0,
+    "distributionType": 0.875,
+    "returnOfCapital": 0.75,
+    "periodEnd": 1.0,
+    "nav": 1.0,
+    "beginningBalance": 1.0,
+    "endingBalance": 0.6666666666666666,
+    "totalDistributions": 0.6666666666666666,
+    "totalCalled": 0.8333333333333334,
+    "grossIrr": 1.0,
+    "netAssets": 0.8000000000000002,
+    "totalAssets": 0.8000000000000002,
+    "isAudited": 1.0,
+    "totalLiabilities": 1.0,
+    "burnRate": 0.6,
+    "arr": 0.8000000000000002,
+    "runwayMonths": 1.0,
+    "revenueGrowth": 0.6,
+    "carriedInterest": 1.0,
+    "preferredReturn": 0.8000000000000002,
+    "investmentPeriodYears": 0.8000000000000002,
+    "managementFee": 1.0,
+    "fundSize": 1.0
+  },
+  "by_document_type": {
+    "ANNUAL_REPORT": {
+      "macro_f1": 0.9777777777777779,
+      "critical_f1": 1.0,
+      "n": 5
+    },
+    "CAPITAL_ACCOUNT_STATEMENT": {
+      "macro_f1": 0.9791666666666666,
+      "critical_f1": 0.9166666666666667,
+      "n": 6
+    },
+    "CAPITAL_CALL": {
+      "macro_f1": 0.9545454545454546,
+      "critical_f1": 0.9666666666666667,
+      "n": 10
+    },
+    "DISTRIBUTION": {
+      "macro_f1": 1.0,
+      "critical_f1": 1.0,
+      "n": 8
+    },
+    "FINANCIAL_STATEMENT": {
+      "macro_f1": 0.9666666666666667,
+      "critical_f1": null,
+      "n": 5
+    },
+    "INVESTOR_UPDATE": {
+      "macro_f1": 0.9714285714285714,
+      "critical_f1": 1.0,
+      "n": 5
+    },
+    "QUARTERLY_REPORT": {
+      "macro_f1": 0.9400000000000001,
+      "critical_f1": 1.0,
+      "n": 10
+    },
+    "TERM_SHEET": {
+      "macro_f1": 0.9666666666666667,
+      "critical_f1": null,
+      "n": 5
+    }
+  },
+  "critical_fields": [
+    "dueDate",
+    "callDate",
+    "totalAmount",
+    "navAmount",
+    "distributionDate",
+    "nav",
+    "totalDistributions"
+  ],
+  "targets": {
+    "overall_f1": 0.9,
+    "critical_field_f1": 0.95
+  }
+}
